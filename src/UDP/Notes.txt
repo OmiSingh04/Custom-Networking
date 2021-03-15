@@ -6,3 +6,6 @@ for example, a clock server that sends the current time to its client when reque
 it doesn't really make sense to resend it because the time will be incorrect when the client receives it on the second try.'
 If the client makes two requests and receives packets from the server out of order,
 it doesn't really matter because the client can figure out that the packets are out of order and make another request.
+
+
+More soon...
