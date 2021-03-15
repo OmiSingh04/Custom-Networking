@@ -1,0 +1,32 @@
+Transmission Control Protocol (TCP)
+When two nodes need a reliable connection, TCP is used to send the data back and forth between the users.
+It guarantees that the data is sent from one end to the other and received in the same order as it was sent.
+
+Point to point channels for applications that require reliable connections.
+
+Definition: 
+TCP (Transmission Control Protocol) is a connection-based protocol that provides a reliable flow of data between two computers.
+
+
+
+PORT NUMBERS: Used to identify which application within the node should the data be sent!?
+like from minecraft server to the client IP and the port!
+
+SOCKETS
+A SERVER RUNS ON THE PARTICULAR MACHINE ON A SOCKET BOUND TO A PORT NUMBER :)
+
+On the client-side: The client knows the hostname of the machine on which the server is running and the port number on which the server is listening. 
+To make a connection request, the client tries to rendezvous with the server on the server's machine and port. 
+The client also needs to identify itself to the server so it binds to a local port number that it will use during this connection. 
+This is usually assigned by the system.
+
+If everything goes well, the server accepts the connection. 
+Upon acceptance, the server gets a new socket bound to the same local port and also has its remote endpoint set to the address and port of the client. 
+It needs a new socket so that it can continue to listen to the original socket for connection requests while tending to the needs of the connected client.
+
+
+Definition: 
+A socket is one endpoint of a two-way communication link between two programs running on the network. 
+A socket is bound to a port number so that the TCP layer can identify the application that data is destined to be sent to.
+
+

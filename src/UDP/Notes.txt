@@ -1,0 +1,8 @@
+User Datagram protocol:
+UDP (User Datagram Protocol) is a protocol that sends independent packets of data, called datagrams.
+They are sent from one computer to another with no guarantees about arrival. UDP is not connection-based like TCP.
+
+for example, a clock server that sends the current time to its client when requested to do so. If the client misses a packet, 
+it doesn't really make sense to resend it because the time will be incorrect when the client receives it on the second try.'
+If the client makes two requests and receives packets from the server out of order,
+it doesn't really matter because the client can figure out that the packets are out of order and make another request.
